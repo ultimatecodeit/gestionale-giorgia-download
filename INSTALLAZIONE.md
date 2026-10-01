@@ -63,18 +63,49 @@ passo successivo.
    **Applicazioni**.
 3. Chiudi quella finestra e apri **Applicazioni** (dal Finder o da
    Launchpad).
-4. **Al primo avvio soltanto**: NON fare doppio clic sull'app. Fai invece
-   **clic con il tasto destro** (o Control+clic) sull'icona dell'app →
-   scegli **"Apri"** dal menu. macOS mostrerà un avviso perché l'app non
-   viene da un "developer identificato" — è normale, clicca di nuovo
-   **"Apri"** nella finestra di conferma.
-5. Dalle volte successive potrai aprirla normalmente con un doppio clic.
+4. **Doppio clic** sull'app. Al primo avvio macOS la blocca, perché l'app
+   non ha un certificato Apple a pagamento: compare un avviso con i
+   pulsanti **"Fine"** e **"Sposta nel Cestino"**. Clicca **"Fine"**
+   (NON "Sposta nel Cestino").
+5. Apri il menu Apple (la mela in alto a sinistra) → **Impostazioni di Sistema** → **Privacy e
+   sicurezza**. Scorri in fondo alla pagina: trovi la scritta *"L'apertura
+   di "Gestionale Giorgia" è stata bloccata..."*. Clicca **"Apri
+   comunque"**, inserisci la password del Mac (o usa Touch ID) e conferma
+   ancora con **"Apri comunque"**.
+6. Compare la finestra **"Avvio in corso..."**: al primissimo avvio può
+   restare lì fino a un paio di minuti (macOS controlla i file appena
+   scaricati). Non chiuderla e non riaprire l'app: si apre da sola.
+7. Dalle volte successive si apre normalmente con un doppio clic, in pochi
+   secondi.
+
+> Su macOS più vecchi (14 Sonoma o precedenti) al passo 4 può comparire
+> invece un pulsante **"Apri"**: in quel caso basta cliccarlo.
+
+**Se al passo 5 non compare il pulsante "Apri comunque"** (alternativa
+sempre valida): apri l'app **Terminale** (Launchpad → cerca "Terminale"),
+incolla questa riga e premi Invio:
+
+```
+xattr -cr "/Applications/Gestionale Giorgia.app"
+```
+
+Poi chiudi il Terminale e apri l'app con un normale doppio clic.
 
 ## Domande frequenti
 
 **L'antivirus/Windows Defender segnala qualcosa?** Può capitare con
 installer non firmati digitalmente — il file è comunque sicuro. Se il tuo
 antivirus lo blocca, aggiungilo come eccezione.
+
+**Su Mac clicco l'app e non succede nulla.** Al primo avvio la finestra
+"Avvio in corso..." può tardare qualche secondo: attendi senza fare altri
+clic. Se dopo un minuto non è comparso nulla, usa il comando del Terminale
+qui sopra (`xattr -cr ...`) e riprova.
+
+**Ho una versione precedente già installata.** Installa sopra quella nuova
+nello stesso modo: su Windows esegui il nuovo `.exe`, su Mac trascina la
+nuova app in Applicazioni e scegli "Sostituisci". I dati dei pazienti non
+vengono toccati.
 
 **Perché i file sono dentro uno `.zip` con password?** Per evitare che
 l'app possa essere scaricata ed eseguita da chiunque trovi il link per
