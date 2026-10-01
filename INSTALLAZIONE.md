@@ -12,24 +12,40 @@ Vai su:
 (Non serve nessun account GitHub né login per scaricare: la pagina è
 pubblica.)
 
-Nella sezione "Assets" in fondo alla pagina trovi tre file. Scarica
-quello che corrisponde al tuo computer:
+Nella sezione "Assets" in fondo alla pagina trovi tre file `.rar`.
+Scarica quello che corrisponde al tuo computer:
 
 | Il tuo computer | File da scaricare |
 |---|---|
-| Windows | `Gestionale-Giorgia-Setup-X.X.X.exe` |
-| Mac con chip Apple (M1, M2, M3, M4...) | `Gestionale-Giorgia-X.X.X-arm64.dmg` |
-| Mac con processore Intel | `Gestionale-Giorgia-X.X.X-x64.dmg` |
+| Windows | `Gestionale-Giorgia-Setup-X.X.X.exe.rar` |
+| Mac con chip Apple (M1, M2, M3, M4...) | `Gestionale-Giorgia-X.X.X-arm64.dmg.rar` |
+| Mac con processore Intel | `Gestionale-Giorgia-X.X.X-x64.dmg.rar` |
 
 **Non sai se il tuo Mac è Apple o Intel?** Clicca sul logo Apple in alto
 a sinistra → *Informazioni su questo Mac*. Alla voce "Chip" (o
 "Processore"): se c'è scritto "Apple M..." scegli la versione *arm64*,
 se c'è scritto "Intel" scegli la versione *x64*.
 
-## 2. Installa — Windows
+## 2. Estrai il file (richiede una password)
 
-1. Apri il file `.exe` scaricato (doppio clic, di solito è nella cartella
-   Download).
+I file sono protetti da password per evitare che chiunque li scarichi
+senza autorizzazione — **chiedi la password a chi ti ha mandato questo
+link**, non è scritta qui.
+
+- **Windows**: serve un programma per aprire i file `.rar` — se non ne hai
+  già uno, scarica gratis [7-Zip](https://www.7-zip.org/) o
+  [WinRAR](https://www.win-rar.com/). Poi clic destro sul file scaricato
+  → *Estrai qui* (o simile) → inserisci la password quando richiesta.
+- **Mac**: scarica gratis [The Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353)
+  dal Mac App Store (una sola volta). Poi doppio clic sul file `.rar` →
+  inserisci la password quando richiesta.
+
+Al termine avrai il file `.exe` o `.dmg` vero e proprio, pronto per il
+passo successivo.
+
+## 3. Installa — Windows
+
+1. Apri il file `.exe` appena estratto (doppio clic).
 2. Windows mostrerà un avviso blu: **"Windows ha protetto il PC"**. È
    normale — l'app non ha ancora un certificato di firma a pagamento, ma
    il programma è sicuro. Clicca su **"Ulteriori informazioni"**, poi su
@@ -39,9 +55,9 @@ se c'è scritto "Intel" scegli la versione *x64*.
 4. L'app si apre da sola al termine, e trovi anche un'icona sul Desktop e
    nel menu Start per le volte successive.
 
-## 3. Installa — Mac
+## 4. Installa — Mac
 
-1. Apri il file `.dmg` scaricato (doppio clic).
+1. Apri il file `.dmg` estratto al passo 2 (doppio clic).
 2. Si apre una finestra: trascina l'icona dell'app nella cartella
    **Applicazioni**.
 3. Chiudi quella finestra e apri **Applicazioni** (dal Finder o da
@@ -56,10 +72,12 @@ se c'è scritto "Intel" scegli la versione *x64*.
 ## Domande frequenti
 
 **L'antivirus/Windows Defender segnala qualcosa?** Può capitare con
-installer non firmati digitalmente — il file è comunque sicuro (viene
-compilato automaticamente da GitHub a partire dal codice sorgente
-pubblico del progetto). Se il tuo antivirus lo blocca, aggiungilo come
-eccezione.
+installer non firmati digitalmente — il file è comunque sicuro. Se il tuo
+antivirus lo blocca, aggiungilo come eccezione.
+
+**Perché i file sono dentro un `.rar` con password?** Per evitare che
+l'app possa essere scaricata ed eseguita da chiunque trovi il link per
+caso — solo chi riceve la password da te può effettivamente installarla.
 
 **Dove vengono salvati i dati dei pazienti?** In una cartella dedicata sul
 tuo computer, separata dal programma stesso — non vengono mai inviati a
