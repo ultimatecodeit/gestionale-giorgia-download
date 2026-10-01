@@ -12,14 +12,14 @@ Vai su:
 (Non serve nessun account GitHub né login per scaricare: la pagina è
 pubblica.)
 
-Nella sezione "Assets" in fondo alla pagina trovi tre file `.rar`.
+Nella sezione "Assets" in fondo alla pagina trovi tre file `.zip`.
 Scarica quello che corrisponde al tuo computer:
 
 | Il tuo computer | File da scaricare |
 |---|---|
-| Windows | `Gestionale-Giorgia-Setup-X.X.X.exe.rar` |
-| Mac con chip Apple (M1, M2, M3, M4...) | `Gestionale-Giorgia-X.X.X-arm64.dmg.rar` |
-| Mac con processore Intel | `Gestionale-Giorgia-X.X.X-x64.dmg.rar` |
+| Windows | `Gestionale-Giorgia-Setup-X.X.X.exe.zip` |
+| Mac con chip Apple (M1, M2, M3, M4...) | `Gestionale-Giorgia-X.X.X-arm64.dmg.zip` |
+| Mac con processore Intel | `Gestionale-Giorgia-X.X.X-x64.dmg.zip` |
 
 **Non sai se il tuo Mac è Apple o Intel?** Clicca sul logo Apple in alto
 a sinistra → *Informazioni su questo Mac*. Alla voce "Chip" (o
@@ -32,13 +32,14 @@ I file sono protetti da password per evitare che chiunque li scarichi
 senza autorizzazione — **chiedi la password a chi ti ha mandato questo
 link**, non è scritta qui.
 
-- **Windows**: serve un programma per aprire i file `.rar` — se non ne hai
-  già uno, scarica gratis [7-Zip](https://www.7-zip.org/) o
-  [WinRAR](https://www.win-rar.com/). Poi clic destro sul file scaricato
-  → *Estrai qui* (o simile) → inserisci la password quando richiesta.
-- **Mac**: scarica gratis [The Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353)
-  dal Mac App Store (una sola volta). Poi doppio clic sul file `.rar` →
-  inserisci la password quando richiesta.
+Sono file `.zip` normali (cifrati AES-256): **non serve installare nulla**,
+li apre lo strumento già incluso nel sistema operativo.
+
+- **Windows**: doppio clic sul file scaricato per aprirlo, poi trascina
+  fuori (o clic destro → *Estrai tutto...*) il file `.exe` contenuto.
+  Windows chiederà la password al momento dell'estrazione.
+- **Mac**: doppio clic sul file scaricato. Finder chiede subito la
+  password, poi estrae automaticamente il `.dmg` nella stessa cartella.
 
 Al termine avrai il file `.exe` o `.dmg` vero e proprio, pronto per il
 passo successivo.
@@ -75,7 +76,7 @@ passo successivo.
 installer non firmati digitalmente — il file è comunque sicuro. Se il tuo
 antivirus lo blocca, aggiungilo come eccezione.
 
-**Perché i file sono dentro un `.rar` con password?** Per evitare che
+**Perché i file sono dentro uno `.zip` con password?** Per evitare che
 l'app possa essere scaricata ed eseguita da chiunque trovi il link per
 caso — solo chi riceve la password da te può effettivamente installarla.
 
