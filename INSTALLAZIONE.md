@@ -5,14 +5,15 @@ browser — nessun programma particolare, nessuna chiavetta USB.
 
 ## 1. Scarica il file giusto
 
-Vai su:
+Vai sulla pagina del tuo computer:
 
-**https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/latest**
+- **Windows**: https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/tag/v1.0.10
+- **Mac**: https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/latest
 
-(Non serve nessun account GitHub né login per scaricare: la pagina è
-pubblica.)
+(Non serve nessun account GitHub né login per scaricare: le pagine sono
+pubbliche.)
 
-Nella sezione "Assets" in fondo alla pagina trovi tre file `.zip`.
+Nella sezione "Assets" in fondo alla pagina trovi i file `.zip`.
 Scarica quello che corrisponde al tuo computer:
 
 | Il tuo computer | File da scaricare |
