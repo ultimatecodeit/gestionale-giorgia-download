@@ -7,7 +7,7 @@ browser — nessun programma particolare, nessuna chiavetta USB.
 
 Vai sulla pagina del tuo computer:
 
-- **Windows**: https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/tag/v1.0.10
+- **Windows**: https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/tag/v1.0.13
 - **Mac**: https://github.com/ultimatecodeit/gestionale-giorgia-download/releases/latest
 
 (Non serve nessun account GitHub né login per scaricare: le pagine sono
