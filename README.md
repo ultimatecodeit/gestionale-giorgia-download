@@ -7,7 +7,7 @@ desktop Gestionale Giorgia (Windows e macOS) — nessun codice sorgente.
 
 | Il tuo computer | Download |
 |---|---|
-| Windows | 👉 **[Versione 1.0.10 per Windows](../../releases/tag/v1.0.10)** |
+| Windows | 👉 **[Versione 1.0.13 per Windows](../../releases/tag/v1.0.13)** |
 | Mac (chip Apple o Intel) | 👉 **[Ultima versione disponibile per Mac](../../releases/latest)** |
 
 Nella pagina che si apre, il file da scaricare è nella sezione "Assets"
